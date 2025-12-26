@@ -100,4 +100,3 @@ function getFlippableCells(x, y, player) {
   }
   return flippable;
 }
-</script>

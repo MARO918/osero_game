@@ -1,0 +1,36 @@
+
+  body {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background: #f0f0f0;
+    font-family: sans-serif;
+  }
+  #board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    background: #2e8b57; /* 緑 */
+    border: 5px solid black;
+    gap: 2px;
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    background: #2e8b57;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+  }
+  .stone {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transition: 0.2s;
+  }
+  .black { background: black; }
+  .white { background: white; }
+</style>
